@@ -1,0 +1,64 @@
+
+> accura-one-website@1.0.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+   ▲ Next.js 15.5.23
+   - Local:        http://127.0.0.1:3000
+   - Network:      http://127.0.0.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 2s
+ ○ Compiling / ...
+ ✓ Compiled / in 836ms (531 modules)
+ GET / 200 in 1453ms
+ GET / 200 in 117ms
+ ✓ Compiled in 996ms (545 modules)
+ ✓ Compiled in 126ms (231 modules)
+ GET / 200 in 251ms
+ GET / 200 in 47ms
+ ✓ Compiled in 387ms (545 modules)
+ GET / 200 in 68ms
+ ✓ Compiled in 344ms (545 modules)
+ ✓ Compiled in 378ms (545 modules)
+ ✓ Compiled in 308ms (545 modules)
+ ✓ Compiled in 415ms (545 modules)
+ ✓ Compiled in 321ms (545 modules)
+ ✓ Compiled in 455ms (545 modules)
+ ✓ Compiled in 354ms (545 modules)
+ ✓ Compiled in 431ms (545 modules)
+ ✓ Compiled in 282ms (545 modules)
+ ✓ Compiled in 431ms (545 modules)
+ ✓ Compiled in 536ms (545 modules)
+ ✓ Compiled in 456ms (545 modules)
+ ✓ Compiled in 347ms (545 modules)
+ ✓ Compiled in 755ms (547 modules)
+ ✓ Compiled in 484ms (547 modules)
+ ✓ Compiled in 450ms (545 modules)
+ ✓ Compiled in 367ms (545 modules)
+ ✓ Compiled in 504ms (545 modules)
+ ✓ Compiled in 287ms (545 modules)
+ ✓ Compiled in 570ms (545 modules)
+ ✓ Compiled in 415ms (545 modules)
+ ✓ Compiled in 426ms (545 modules)
+ ✓ Compiled in 282ms (545 modules)
+ ✓ Compiled in 304ms (545 modules)
+ ✓ Compiled in 579ms (545 modules)
+ ✓ Compiled in 277ms (545 modules)
+ ✓ Compiled in 524ms (545 modules)
+ ✓ Compiled in 526ms (545 modules)
+ ✓ Compiled in 386ms (545 modules)
+ ✓ Compiled in 379ms (545 modules)
+ ✓ Compiled in 359ms (545 modules)
+ ✓ Compiled in 263ms (545 modules)
+ ✓ Compiled in 540ms (545 modules)
+ ✓ Compiled in 373ms (545 modules)
+ ✓ Compiled in 365ms (545 modules)
+ ✓ Compiled in 282ms (545 modules)
+ ✓ Compiled in 453ms (545 modules)
+ ✓ Compiled in 397ms (545 modules)
+ ✓ Compiled in 446ms (545 modules)
+ ✓ Compiled in 361ms (545 modules)
+ ✓ Compiled in 246ms (545 modules)
+ ✓ Compiled in 307ms (545 modules)
+ ✓ Compiled in 326ms (545 modules)
+ ✓ Compiled in 311ms (545 modules)

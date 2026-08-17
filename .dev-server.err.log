@@ -1,0 +1,95 @@
+ ⨯ ./app/page.tsx
+Error:   [31mx[0m Expected '</', got ':'
+     ,-[[36;1;4mD:\develop\accura\app\page.tsx[0m:719:1]
+ [2m716[0m |       <footer
+ [2m717[0m |         className="min-h-[750px] overflow-hidden rounded-t-[64px] bg-brand-950 text-white max-[820px]:rounded-t-[40px]"
+ [2m718[0m |         id="contact"
+ [2m719[0m |         style={backgroundImage: {asset("pattern.png")}}
+     : [35;1m                              ^[0m
+ [2m720[0m |       >
+ [2m721[0m |         <div className="relative h-[366px] overflow-hidden text-center max-[560px]:h-80">
+ [2m722[0m |           {/* <FooterPattern /> */}
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/page.tsx
+ ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '@/public/pattern.png'
+  3 | import type { ReactNode } from "react";
+  4 | import { useEffect, useState } from "react";
+> 5 | import patternImage from "@/public/pattern.png";
+    | ^
+  6 |
+  7 | const asset = (name: string) => `/assets/${name}`;
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '../public/pattern.png'
+  3 | import type { ReactNode } from "react";
+  4 | import { useEffect, useState } from "react";
+> 5 | import patternImage from "../public/pattern.png";
+    | ^
+  6 |
+  7 | const asset = (name: string) => `/assets/${name}`;
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '../public/pattern.png'
+  3 | import type { ReactNode } from "react";
+  4 | import { useEffect, useState } from "react";
+> 5 | import patternImage from "../public/pattern.png";
+    | ^
+  6 |
+  7 | const asset = (name: string) => `/assets/${name}`;
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve './public/pattern.png'
+  3 | import type { ReactNode } from "react";
+  4 | import { useEffect, useState } from "react";
+> 5 | import patternImage from "./public/pattern.png";
+    | ^
+  6 |
+  7 | const asset = (name: string) => `/assets/${name}`;
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '../..//public/pattern.png'
+  3 | import type { ReactNode } from "react";
+  4 | import { useEffect, useState } from "react";
+> 5 | import patternImage from "../..//public/pattern.png";
+    | ^
+  6 |
+  7 | const asset = (name: string) => `/assets/${name}`;
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '../../public/pattern.png'
+  3 | import type { ReactNode } from "react";
+  4 | import { useEffect, useState } from "react";
+> 5 | import patternImage from "../../public/pattern.png";
+    | ^
+  6 |
+  7 | const asset = (name: string) => `/assets/${name}`;
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
+ ⨯ ./app/page.tsx:5:1
+Module not found: Can't resolve '../assets/public/pattern.png'
+  3 | import type { ReactNode } from "react";
+  4 | import { useEffect, useState } from "react";
+> 5 | import patternImage from "../assets/public/pattern.png";
+    | ^
+  6 |
+  7 | const asset = (name: string) => `/assets/${name}`;
+  8 |
+
+https://nextjs.org/docs/messages/module-not-found
