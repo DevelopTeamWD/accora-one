@@ -362,7 +362,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div className="flex gap-4 flex-1 justify-end">
+          <div className="flex gap-4 justify-end">
             <span onClick={closeMenu}>
               <PrimaryButton href="#contact" small>
                 Book a Consultation
