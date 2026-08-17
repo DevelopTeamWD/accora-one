@@ -14,7 +14,7 @@ export function HeroSection() {
         alt=""
         aria-hidden="true"
       />
-      <Navigation activeItem="solutions" />
+      <Navigation />
 
       <div className="reveal relative z-[2] mx-auto mt-16 w-[min(calc(100%_-_40px),610px)] text-center max-[820px]:mt-[52px] max-[560px]:mt-9">
         <p className="mb-[19px] inline-flex rounded-full bg-brand-150 px-4 py-0.5 text-base font-medium leading-6 text-[#2b2b2b] max-[560px]:text-[13px] max-[560px]:leading-5">

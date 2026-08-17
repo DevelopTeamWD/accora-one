@@ -15,7 +15,7 @@ export function SolutionsHeroSection() {
         aria-hidden="true"
       />
 
-      <Navigation activeItem="solutions" menuId="solutions-nav-menu" />
+      <Navigation menuId="solutions-nav-menu" />
 
       <div className="reveal absolute left-1/2 top-[142px] z-10 w-[min(calc(100%_-_40px),820px)] -translate-x-1/2 text-center max-[820px]:top-[130px] max-[560px]:top-[118px]">
         <h1 className="text-5xl font-semibold leading-[68px] tracking-[0.02em] max-[820px]:text-[42px] max-[820px]:leading-[1.2] max-[560px]:text-[34px]">
