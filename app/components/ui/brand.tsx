@@ -1,12 +1,13 @@
 import { asset } from "@/app/lib/assets";
+import Link from "next/link";
 
 export function Brand({ footer = false }: { footer?: boolean }) {
   const variant = footer ? "green" : "white";
 
   return (
-    <a
+    <Link
       className={`inline-flex items-center gap-[7px] ${footer ? "" : "relative z-10"}`}
-      href="#top"
+      href="/"
       aria-label="Accura One home"
     >
       <img
@@ -27,6 +28,6 @@ export function Brand({ footer = false }: { footer?: boolean }) {
         src={asset(`logo-word-${variant}.svg`)}
         alt="Accura"
       />
-    </a>
+    </Link>
   );
 }

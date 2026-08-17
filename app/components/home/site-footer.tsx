@@ -65,7 +65,7 @@ export function SiteFooter() {
               </a>
               <a
                 className="text-base leading-6 text-brand-50"
-                href="#solutions"
+                href="/solutions"
               >
                 Solutions
               </a>

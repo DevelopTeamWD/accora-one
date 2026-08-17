@@ -1,36 +1,8 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { asset } from "@/app/lib/assets";
-import { Brand } from "@/app/components/ui/brand";
-import { Container } from "@/app/components/ui/container";
+import { Navigation } from "@/app/components/ui/navigation";
 import { PrimaryButton } from "@/app/components/ui/primary-button";
 
-const navigation = [
-  { label: "Solutions", href: "#solutions", active: true },
-  { label: "Compliance", href: "#compliance" },
-  { label: "About", href: "#about" },
-];
-
 export function HeroSection() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle("menu-open", menuOpen);
-    return () => document.body.classList.remove("menu-open");
-  }, [menuOpen]);
-
-  useEffect(() => {
-    const closeDesktopMenu = () => {
-      if (window.innerWidth > 820) setMenuOpen(false);
-    };
-
-    window.addEventListener("resize", closeDesktopMenu);
-    return () => window.removeEventListener("resize", closeDesktopMenu);
-  }, []);
-
-  const closeMenu = () => setMenuOpen(false);
-
   return (
     <header
       className="relative h-[878px] overflow-hidden rounded-b-[64px] bg-brand-950 text-white max-[820px]:h-[820px] max-[820px]:rounded-b-[40px] max-[560px]:h-[790px]"
@@ -42,56 +14,7 @@ export function HeroSection() {
         alt=""
         aria-hidden="true"
       />
-      <Container className="relative z-10 flex h-[78px] items-center justify-between">
-        <Brand />
-
-        <div
-          className={`flex flex-1 items-center justify-center gap-40 max-[1100px]:gap-[70px] max-[820px]:fixed max-[820px]:inset-0 max-[820px]:flex-col max-[820px]:justify-center max-[820px]:gap-[38px] max-[820px]:bg-brand-950/98 max-[820px]:px-6 max-[820px]:pb-10 max-[820px]:pt-[90px] max-[820px]:transition-opacity ${menuOpen ? "max-[820px]:z-10 max-[820px]:opacity-100" : "max-[820px]:pointer-events-none max-[820px]:-z-10 max-[820px]:opacity-0"}`}
-          id="nav-menu"
-        >
-          <nav
-            className="flex items-center gap-10 max-[820px]:flex-col max-[820px]:gap-[26px]"
-            aria-label="Primary navigation"
-          >
-            {navigation.map((item) => (
-              <a
-                className={`border-b py-[5px] font-medium transition max-[820px]:text-[28px] ${item.active ? "border-brand-700 text-brand-700" : "border-transparent hover:border-brand-700 hover:text-brand-700"}`}
-                href={item.href}
-                key={item.href}
-                onClick={closeMenu}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-        </div>
-
-        <div className="flex justify-end gap-4">
-          <span onClick={closeMenu}>
-            <PrimaryButton href="#contact" small>
-              Book a Consultation
-            </PrimaryButton>
-          </span>
-          <button
-            className="relative z-20 hidden size-[42px] rounded-full border border-white/40 bg-transparent p-[9px] max-[820px]:block"
-            type="button"
-            aria-expanded={menuOpen}
-            aria-controls="nav-menu"
-            onClick={() => setMenuOpen((current) => !current)}
-          >
-            <span
-              className={`my-[5px] block h-px w-full bg-white transition ${menuOpen ? "translate-y-[6px] rotate-45" : ""}`}
-            />
-            <span
-              className={`my-[5px] block h-px w-full bg-white transition ${menuOpen ? "opacity-0" : ""}`}
-            />
-            <span
-              className={`my-[5px] block h-px w-full bg-white transition ${menuOpen ? "-translate-y-[6px] -rotate-45" : ""}`}
-            />
-            <span className="sr-only">Toggle navigation</span>
-          </button>
-        </div>
-      </Container>
+      <Navigation activeItem="solutions" />
 
       <div className="reveal relative z-[2] mx-auto mt-16 w-[min(calc(100%_-_40px),610px)] text-center max-[820px]:mt-[52px] max-[560px]:mt-9">
         <p className="mb-[19px] inline-flex rounded-full bg-brand-150 px-4 py-0.5 text-base font-medium leading-6 text-[#2b2b2b] max-[560px]:text-[13px] max-[560px]:leading-5">

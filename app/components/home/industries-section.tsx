@@ -3,10 +3,14 @@ import { SectionHeading } from "@/app/components/ui/section-heading";
 import { industries } from "@/app/data/home-content";
 import { asset } from "@/app/lib/assets";
 
-export function IndustriesSection() {
+export function IndustriesSection({ compact = false }: { compact?: boolean }) {
   return (
     <section
-      className="min-h-[557px] py-[98px] max-[820px]:py-[76px] max-[560px]:py-16"
+      className={
+        compact
+          ? "min-h-[521px] py-20 max-[560px]:py-16"
+          : "min-h-[557px] py-[98px] max-[820px]:py-[76px] max-[560px]:py-16"
+      }
       aria-labelledby="industries-title"
     >
       <Container>
@@ -20,7 +24,7 @@ export function IndustriesSection() {
         <div className="grid grid-cols-4 gap-5 max-[1100px]:grid-cols-2 max-[560px]:grid-cols-1">
           {industries.map((industry) => (
             <article
-              className={`reveal flex min-h-[136px] items-center gap-4 rounded-[14px] px-6 py-[30px] shadow-[0_24px_48px_-12px_rgba(16,24,40,0.2)] max-[820px]:min-h-[120px] ${industry.cardClass}`}
+              className={`reveal flex min-h-[136px] items-center gap-4 rounded-[14px] px-6 shadow-[0_24px_48px_-12px_rgba(16,24,40,0.2)] max-[820px]:min-h-[120px] ${compact ? "py-10" : "py-[30px]"} ${industry.cardClass}`}
               key={industry.icon}
             >
               <span className="grid size-14 shrink-0 place-items-center rounded-full bg-[#00372e]">
