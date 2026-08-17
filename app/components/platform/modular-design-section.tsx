@@ -1,12 +1,12 @@
 import { Container } from "@/app/components/ui/container";
-import { moduleGroups, type ModuleGroup } from "@/app/data/solutions-content";
+import { moduleGroups, type ModuleGroup } from "@/app/data/platform-content";
 import { asset } from "@/app/lib/assets";
 
 function ModuleColumn({ icon, iconClass, title, modules }: ModuleGroup) {
   return (
     <div className="reveal flex flex-col gap-6">
       <div className="flex h-9 items-center">
-        <img className={iconClass} src={asset(`solutions/${icon}`)} alt="" />
+        <img className={iconClass} src={asset(`platform/${icon}`)} alt="" />
         <h3 className="text-2xl font-medium leading-7">{title}</h3>
       </div>
       <div className="grid gap-4">
@@ -35,7 +35,7 @@ export function ModularDesignSection() {
     >
       <img
         className="pointer-events-none absolute inset-0 size-full object-cover"
-        src={asset("solutions/modular-background.png")}
+        src={asset("platform/modular-background.png")}
         alt=""
         aria-hidden="true"
       />

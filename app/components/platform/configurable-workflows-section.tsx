@@ -1,5 +1,5 @@
 import { Container } from "@/app/components/ui/container";
-import { workflowFeatures } from "@/app/data/solutions-content";
+import { workflowFeatures } from "@/app/data/platform-content";
 import { asset } from "@/app/lib/assets";
 
 export function ConfigurableWorkflowsSection() {
@@ -10,10 +10,10 @@ export function ConfigurableWorkflowsSection() {
     >
       <Container>
         <div className="flex min-h-[612px] items-center gap-12 max-[1100px]:gap-8 max-[820px]:flex-col">
-          <div className="reveal w-[598px] shrink-0 overflow-hidden rounded-3xl max-[1100px]:w-1/2 max-[820px]:w-full max-[820px]:max-w-[598px]">
+          <div className="reveal w-[590px] shrink-0 overflow-hidden rounded-3xl max-[1100px]:w-1/2 max-[820px]:w-full max-[820px]:max-w-[598px]">
             <img
               className="h-auto w-full"
-              src={asset("solutions/workflow-diagram.png")}
+              src={asset("platform/workflow-diagram.png")}
               alt="Connected quality workflow from initial process through review, audit, risk, incident and change control"
             />
           </div>
@@ -35,13 +35,16 @@ export function ConfigurableWorkflowsSection() {
 
             <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-6 max-[560px]:grid-cols-1">
               {workflowFeatures.map((feature) => (
-                <article className="flex flex-col items-start gap-1" key={feature.title}>
+                <article
+                  className="flex flex-col items-start gap-1"
+                  key={feature.title}
+                >
                   <img
                     className={feature.iconClass}
-                    src={asset(`solutions/${feature.icon}`)}
+                    src={asset(`platform/${feature.icon}`)}
                     alt=""
                   />
-                  <h3 className="pt-1 text-xl font-semibold leading-7 text-[#454545]">
+                  <h3 className="pt-1 text-xl font-semibold leading-7 text-[#454545] xl:whitespace-nowrap">
                     {feature.title}
                   </h3>
                   <span className="h-px w-8 bg-brand-700" aria-hidden="true" />

@@ -2,7 +2,7 @@ import { Container } from "@/app/components/ui/container";
 import {
   connectedQualityCards,
   type SolutionCard,
-} from "@/app/data/solutions-content";
+} from "@/app/data/platform-content";
 import { asset } from "@/app/lib/assets";
 
 function ConnectedQualityCard({
@@ -14,7 +14,7 @@ function ConnectedQualityCard({
   return (
     <article className="reveal flex min-h-[218px] flex-col gap-4 rounded-[20px] border border-[#e0e6eb] bg-white p-5">
       <span className="grid size-11 place-items-center rounded-xl bg-brand-950">
-        <img className={iconClass} src={asset(`solutions/${icon}`)} alt="" />
+        <img className={iconClass} src={asset(`platform/${icon}`)} alt="" />
       </span>
       <h3 className="text-2xl font-medium leading-7 max-[1100px]:text-xl">
         {title}
@@ -26,7 +26,10 @@ function ConnectedQualityCard({
 
 export function ConnectedQualitySection() {
   return (
-    <section className="py-[120px] max-[820px]:py-20" aria-labelledby="connected-title">
+    <section
+      className="py-[120px] max-[820px]:py-20"
+      aria-labelledby="connected-title"
+    >
       <Container>
         <div className="flex items-start justify-between gap-[150px] max-[1100px]:gap-16 max-[820px]:flex-col max-[820px]:gap-10">
           <div className="reveal max-w-[571px] flex-1">
@@ -46,7 +49,7 @@ export function ConnectedQualitySection() {
           </div>
           <img
             className="reveal h-[226px] w-[482px] rounded-2xl object-cover max-[820px]:h-auto max-[820px]:w-full"
-            src={asset("solutions/connected-quality.png")}
+            src={asset("platform/connected-quality.png")}
             alt="Scientist inspecting a laboratory sample"
           />
         </div>

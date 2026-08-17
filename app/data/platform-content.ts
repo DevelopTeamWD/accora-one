@@ -86,7 +86,7 @@ export const moduleGroups: ModuleGroup[] = [
       {
         title: "Audit Management",
         description:
-          "Automate training assignments based on document changes and role updates.",
+          "Automate training assignments based on document changes and roleupdates.",
       },
       {
         title: "Supplier Quality",
@@ -155,9 +155,10 @@ export const implementationServices: SolutionCard[] = [
       "Comprehensive training programs to ensure smooth user adoption.",
   },
   {
-    icon: "support-training.svg",
+    icon: "validation-consulting.svg",
     iconClass: "h-[16.2691px] w-[19.9229px]",
     title: "Validation & Consulting",
-    description: "Ongoing support to maintain validation status during updates.",
+    description:
+      "Ongoing support to maintain validation status during updates.",
   },
 ];

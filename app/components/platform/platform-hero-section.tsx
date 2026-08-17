@@ -10,7 +10,7 @@ export function SolutionsHeroSection() {
     >
       <img
         className="pointer-events-none absolute inset-0 size-full object-cover"
-        src={asset("/solutions/hero-solution.png")}
+        src={asset("/platform/hero-solution.png")}
         alt=""
         aria-hidden="true"
       />
@@ -47,7 +47,7 @@ export function SolutionsHeroSection() {
       <div className="reveal absolute left-1/2 top-[502px] z-[3] h-[510px] w-[min(calc(100%_-_80px),925px)] -translate-x-1/2 overflow-hidden rounded-3xl border border-white bg-[linear-gradient(139deg,rgba(255,255,255,0.3),rgba(153,153,153,0.3))] p-3 shadow-[0_30px_80px_rgba(0,25,29,0.35)] max-[820px]:top-[530px] max-[820px]:h-[360px] max-[820px]:w-[calc(100%_-_32px)] max-[820px]:rounded-[18px] max-[820px]:p-2 max-[560px]:top-[555px] max-[560px]:h-[260px]">
         <img
           className="size-full rounded-2xl object-cover object-top"
-          src={asset("solutions/hero-product.png")}
+          src={asset("platform/hero-product.png")}
           alt="Accura risk evaluation interface"
         />
         <div
@@ -59,7 +59,7 @@ export function SolutionsHeroSection() {
       <div className="reveal absolute left-[30.18%] top-[598px] z-[4] w-[57.5%] rounded-2xl border border-[#dedede] bg-white/95 p-2.5 shadow-[0_0_64px_rgba(0,0,0,0.16)] max-[820px]:hidden">
         <img
           className="h-auto w-full"
-          src={asset("solutions/hero-linked-record.png")}
+          src={asset("platform/hero-linked-record.png")}
           alt="Linked risk assessment record"
         />
       </div>

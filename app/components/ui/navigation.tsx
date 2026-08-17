@@ -19,7 +19,7 @@ const navigationItems: Array<{
   label: string;
   href: string;
 }> = [
-  { key: "solutions", label: "Solutions", href: "/solutions" },
+  { key: "platform", label: "Platform", href: "/platform" },
   { key: "compliance", label: "Compliance", href: "/#compliance" },
   { key: "about", label: "About", href: "/#about" },
 ];
@@ -69,9 +69,6 @@ export function Navigation({
           aria-label="Primary navigation"
         >
           {navigationItems.map((item) => {
-            // Logic active tự động dựa vào Pathname
-            // 1. Nếu là "/", false hết (vì không item nào khớp)
-            // 2. Nếu là "/solutions", item solutions sẽ active.
             const isActive = pathname === item.href;
 
             return (

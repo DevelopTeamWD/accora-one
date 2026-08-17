@@ -1,5 +1,5 @@
 import { Container } from "@/app/components/ui/container";
-import { foundationBenefits } from "@/app/data/solutions-content";
+import { foundationBenefits } from "@/app/data/platform-content";
 import { asset } from "@/app/lib/assets";
 
 export function FoundationSection() {
@@ -10,7 +10,7 @@ export function FoundationSection() {
     >
       <img
         className="pointer-events-none absolute bottom-[12.6%] right-[8.3%] w-[74.8%] max-w-[1079px] max-[820px]:bottom-8 max-[820px]:right-0 max-[820px]:w-full max-[820px]:opacity-60"
-        src={asset("solutions/foundation-graph.svg")}
+        src={asset("platform/foundation-graph.svg")}
         alt=""
         aria-hidden="true"
       />
