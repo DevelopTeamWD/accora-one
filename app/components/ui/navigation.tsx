@@ -7,7 +7,7 @@ import { Brand } from "@/app/components/ui/brand";
 import { Container } from "@/app/components/ui/container";
 import { PrimaryButton } from "@/app/components/ui/primary-button";
 
-type NavigationItemKey = "solutions" | "compliance" | "about";
+type NavigationItemKey = "platform" | "compliance" | "about";
 
 type NavigationProps = {
   consultationHref?: string;
