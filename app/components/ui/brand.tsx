@@ -45,7 +45,11 @@ export function Brand({ footer = false, tone = "light" }: BrandProps) {
         href="/"
         aria-label="Accura One home"
       >
-        <img className={""} src={asset(`Logo-${variant}.svg`)} alt="" />
+        <img
+          className={"w-[132px] h-[40px]"}
+          src={asset(`Logo-${variant}.svg`)}
+          alt=""
+        />
       </Link>
     );
   }
