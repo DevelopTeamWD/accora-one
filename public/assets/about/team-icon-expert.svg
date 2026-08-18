@@ -1,0 +1,27 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="116" height="116" viewBox="0 0 116 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<path id="Vector" opacity="0.78" d="M58 106C84.5097 106 106 84.5097 106 58C106 31.4903 84.5097 10 58 10C31.4903 10 10 31.4903 10 58C10 84.5097 31.4903 106 58 106Z" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" opacity="0.86" d="M58 85C72.9117 85 85 72.9117 85 58C85 43.0883 72.9117 31 58 31C43.0883 31 31 43.0883 31 58C31 72.9117 43.0883 85 58 85Z" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M58 67C62.9706 67 67 62.9706 67 58C67 53.0294 62.9706 49 58 49C53.0294 49 49 53.0294 49 58C49 62.9706 53.0294 67 58 67Z" fill="#B5E5D1" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M21 49C30.9411 49 39 40.9411 39 31C39 21.0589 30.9411 13 21 13C11.0589 13 3 21.0589 3 31C3 40.9411 11.0589 49 21 49Z" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M95 49C104.941 49 113 40.9411 113 31C113 21.0589 104.941 13 95 13C85.0589 13 77 21.0589 77 31C77 40.9411 85.0589 49 95 49Z" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M21 107C30.9411 107 39 98.9411 39 89C39 79.0589 30.9411 71 21 71C11.0589 71 3 79.0589 3 89C3 98.9411 11.0589 107 21 107Z" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M95 107C104.941 107 113 98.9411 113 89C113 79.0589 104.941 71 95 71C85.0589 71 77 79.0589 77 89C77 98.9411 85.0589 107 95 107Z" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_8" opacity="0.72" d="M39 31H77" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" opacity="0.72" d="M39 89H77" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_10" opacity="0.72" d="M21 49V71" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_11" opacity="0.72" d="M95 49V71" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_12" opacity="0.65" d="M31 41L49 55" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_13" opacity="0.65" d="M85 41L67 55" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_14" opacity="0.65" d="M31 79L49 63" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_15" opacity="0.65" d="M85 79L67 63" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_16" d="M21 35C23.2091 35 25 33.2091 25 31C25 28.7909 23.2091 27 21 27C18.7909 27 17 28.7909 17 31C17 33.2091 18.7909 35 21 35Z" fill="#B5E5D1" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_17" d="M95 35C97.2091 35 99 33.2091 99 31C99 28.7909 97.2091 27 95 27C92.7909 27 91 28.7909 91 31C91 33.2091 92.7909 35 95 35Z" fill="#B5E5D1" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_18" d="M21 93C23.2091 93 25 91.2091 25 89C25 86.7909 23.2091 85 21 85C18.7909 85 17 86.7909 17 89C17 91.2091 18.7909 93 21 93Z" fill="#B5E5D1" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_19" d="M95 93C97.2091 93 99 91.2091 99 89C99 86.7909 97.2091 85 95 85C92.7909 85 91 86.7909 91 89C91 91.2091 92.7909 93 95 93Z" fill="#B5E5D1" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_20" opacity="0.45" d="M13 115H103" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_21" opacity="0.45" d="M58 1V13" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_22" opacity="0.45" d="M1 58H13" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_23" opacity="0.45" d="M103 58H115" stroke="#B5E5D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

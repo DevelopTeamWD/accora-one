@@ -22,7 +22,7 @@ const navigationItems: Array<{
 }> = [
   { key: "platform", label: "Platform", href: "/platform" },
   { key: "compliance", label: "Compliance", href: "/compliance" },
-  { key: "about", label: "About", href: "/#about" },
+  { key: "about", label: "About", href: "/about" },
 ];
 
 export function Navigation({

@@ -1,6 +1,7 @@
 import { Brand } from "@/app/components/ui/brand";
 import { Container } from "@/app/components/ui/container";
 import { asset } from "@/app/lib/assets";
+import Link from "next/link";
 
 const socialLinks = [
   { label: "LinkedIn", icon: "social-linkedin.svg" },
@@ -51,8 +52,8 @@ export function SiteFooter() {
             <p className="mt-4 max-w-[440px] text-sm leading-[22px] text-brand-50">
               A cloud-native electronic Quality Management System (eQMS)
               purpose-built for regulated life sciences organisations, helping
-              teams simplify quality management while maintaining compliance
-              and audit readiness.
+              teams simplify quality management while maintaining compliance and
+              audit readiness.
             </p>
           </div>
           <div className="flex justify-end gap-[103px] pb-6 pt-6 max-[820px]:justify-start max-[560px]:justify-between max-[560px]:gap-10">
@@ -60,27 +61,27 @@ export function SiteFooter() {
               <h3 className="mb-1 text-lg font-semibold leading-6">
                 Privacy Policy
               </h3>
-              <a className="text-base leading-6 text-brand-50" href="#about">
+              <a className="text-base leading-6 text-brand-50" href="#">
                 How it works
               </a>
-              <a
+              <Link
                 className="text-base leading-6 text-brand-50"
-                href="/solutions"
+                href="/platform"
               >
-                Solutions
-              </a>
-              <a
+                Platform
+              </Link>
+              <Link
                 className="text-base leading-6 text-brand-50"
                 href="/compliance"
               >
                 Compliance
-              </a>
+              </Link>
             </div>
             <div className="flex min-w-[120px] flex-col gap-4">
               <h3 className="mb-1 text-lg font-semibold leading-6">Company</h3>
-              <a className="text-base leading-6 text-brand-50" href="#about">
+              <Link className="text-base leading-6 text-brand-50" href="/about">
                 About
-              </a>
+              </Link>
               <a
                 className="text-base leading-6 text-brand-50"
                 href="mailto:hello@accura.one"
