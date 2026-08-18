@@ -4,7 +4,7 @@ import { asset } from "@/app/lib/assets";
 export function AboutHero() {
   return (
     <header id="top">
-      <div className="relative z-30 bg-white shadow-[0_0_22px_rgba(0,0,0,0.1)]">
+      <div className="relative z-30 bg-white ">
         <Navigation theme="light" menuId="about-nav-menu" />
       </div>
 

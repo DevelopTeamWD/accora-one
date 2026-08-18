@@ -4,7 +4,7 @@ import { asset } from "@/app/lib/assets";
 export function ComplianceHero() {
   return (
     <header id="top">
-      <div className="relative z-30 bg-white shadow-[0_0_22px_rgba(0,0,0,0.1)]">
+      <div className="relative z-30 bg-white ">
         <Navigation theme="light" menuId="compliance-nav-menu" />
       </div>
 
@@ -39,9 +39,9 @@ export function ComplianceHero() {
           </h1>
           <p className="mt-4 text-lg leading-7 text-muted max-[560px]:text-base max-[560px]:leading-6">
             Accura supports electronic records, data integrity, audit trails and
-            validation activities across the quality system lifecycle. Built
-            for life sciences teams that need confidence in every record,
-            approval and change.
+            validation activities across the quality system lifecycle. Built for
+            life sciences teams that need confidence in every record, approval
+            and change.
           </p>
         </div>
       </div>
