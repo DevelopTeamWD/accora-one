@@ -1,8 +1,13 @@
 import { asset } from "@/app/lib/assets";
 import Link from "next/link";
 
-export function Brand({ footer = false }: { footer?: boolean }) {
-  const variant = footer ? "green" : "white";
+type BrandProps = {
+  footer?: boolean;
+  tone?: "light" | "dark";
+};
+
+export function Brand({ footer = false, tone = "light" }: BrandProps) {
+  const variant = footer || tone === "dark" ? "green" : "white";
 
   return (
     <Link

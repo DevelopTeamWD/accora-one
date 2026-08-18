@@ -12,6 +12,7 @@ type NavigationItemKey = "platform" | "compliance" | "about";
 type NavigationProps = {
   consultationHref?: string;
   menuId?: string;
+  theme?: "dark" | "light";
 };
 
 const navigationItems: Array<{
@@ -20,13 +21,14 @@ const navigationItems: Array<{
   href: string;
 }> = [
   { key: "platform", label: "Platform", href: "/platform" },
-  { key: "compliance", label: "Compliance", href: "/#compliance" },
+  { key: "compliance", label: "Compliance", href: "/compliance" },
   { key: "about", label: "About", href: "/#about" },
 ];
 
 export function Navigation({
   consultationHref = "#contact",
   menuId = "primary-nav-menu",
+  theme = "dark",
 }: NavigationProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -50,9 +52,15 @@ export function Navigation({
   const closeMenu = useCallback(() => setMenuOpen(false), []);
   const toggleMenu = useCallback(() => setMenuOpen((prev) => !prev), []);
 
+  const lightTheme = theme === "light";
+
   return (
-    <Container className="relative z-20 flex h-[78px] items-center justify-between">
-      <Brand />
+    <Container
+      className={`relative z-20 flex h-[78px] items-center justify-between ${
+        lightTheme ? "text-ink" : "text-white"
+      }`}
+    >
+      <Brand tone={lightTheme ? "dark" : "light"} />
 
       {/* Mobile Menu Overlay */}
       <div
@@ -75,7 +83,7 @@ export function Navigation({
               <Link
                 key={item.key}
                 href={item.href}
-                className={`border-b py-1 font-medium transition max-[820px]:text-[28px] ${
+                className={`border-b py-1 font-medium transition max-[820px]:text-[28px] max-[820px]:text-white ${
                   isActive
                     ? "border-brand-700 text-brand-700"
                     : "border-transparent hover:border-brand-700 hover:text-brand-700"
@@ -100,7 +108,11 @@ export function Navigation({
 
         {/* Burger Button */}
         <button
-          className="relative z-20 hidden size-[42px] rounded-full border border-white/40 bg-transparent p-[9px] max-[820px]:block"
+          className={`relative z-20 hidden size-[42px] rounded-full bg-transparent p-[9px] max-[820px]:block ${
+            menuOpen || !lightTheme
+              ? "border border-white/40"
+              : "border border-ink/25"
+          }`}
           type="button"
           aria-expanded={menuOpen}
           aria-controls={menuId}
@@ -112,19 +124,25 @@ export function Navigation({
 
           {/* Top Bar */}
           <span
-            className={`my-[5px] block h-px w-full bg-white transition-transform duration-300 ${
+            className={`my-[5px] block h-px w-full transition-transform duration-300 ${
+              menuOpen || !lightTheme ? "bg-white" : "bg-ink"
+            } ${
               menuOpen ? "translate-y-[6px] rotate-45" : ""
             }`}
           />
           {/* Middle Bar */}
           <span
-            className={`my-[5px] block h-px w-full bg-white transition-opacity duration-300 ${
+            className={`my-[5px] block h-px w-full transition-opacity duration-300 ${
+              menuOpen || !lightTheme ? "bg-white" : "bg-ink"
+            } ${
               menuOpen ? "opacity-0" : ""
             }`}
           />
           {/* Bottom Bar */}
           <span
-            className={`my-[5px] block h-px w-full bg-white transition-transform duration-300 ${
+            className={`my-[5px] block h-px w-full transition-transform duration-300 ${
+              menuOpen || !lightTheme ? "bg-white" : "bg-ink"
+            } ${
               menuOpen ? "-translate-y-[6px] -rotate-45" : ""
             }`}
           />

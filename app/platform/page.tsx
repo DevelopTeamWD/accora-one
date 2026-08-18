@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { IndustriesSection } from "@/app/components/home/industries-section";
-import { RevealOnScroll } from "@/app/components/home/reveal-on-scroll";
-import { SiteFooter } from "@/app/components/home/site-footer";
 import { ConfigurableWorkflowsSection } from "@/app/components/platform/configurable-workflows-section";
 import { ConnectedQualitySection } from "@/app/components/platform/connected-quality-section";
 import { FoundationSection } from "@/app/components/platform/foundation-section";
@@ -18,7 +16,6 @@ export const metadata: Metadata = {
 export default function platformPage() {
   return (
     <>
-      <RevealOnScroll />
       <SolutionsHeroSection />
       <main>
         <ConnectedQualitySection />
@@ -28,7 +25,6 @@ export default function platformPage() {
         <ImplementationSupportSection />
         <IndustriesSection compact />
       </main>
-      <SiteFooter />
     </>
   );
 }
