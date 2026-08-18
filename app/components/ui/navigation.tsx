@@ -126,25 +126,19 @@ export function Navigation({
           <span
             className={`my-[5px] block h-px w-full transition-transform duration-300 ${
               menuOpen || !lightTheme ? "bg-white" : "bg-ink"
-            } ${
-              menuOpen ? "translate-y-[6px] rotate-45" : ""
-            }`}
+            } ${menuOpen ? "translate-y-[6px] rotate-45" : ""}`}
           />
           {/* Middle Bar */}
           <span
             className={`my-[5px] block h-px w-full transition-opacity duration-300 ${
               menuOpen || !lightTheme ? "bg-white" : "bg-ink"
-            } ${
-              menuOpen ? "opacity-0" : ""
-            }`}
+            } ${menuOpen ? "opacity-0" : ""}`}
           />
           {/* Bottom Bar */}
           <span
             className={`my-[5px] block h-px w-full transition-transform duration-300 ${
               menuOpen || !lightTheme ? "bg-white" : "bg-ink"
-            } ${
-              menuOpen ? "-translate-y-[6px] -rotate-45" : ""
-            }`}
+            } ${menuOpen ? "-translate-y-[6px] -rotate-45" : ""}`}
           />
         </button>
       </div>
