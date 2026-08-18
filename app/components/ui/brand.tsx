@@ -47,7 +47,7 @@ export function Brand({ footer = false, tone = "light" }: BrandProps) {
       >
         <img
           className={"w-[132px] h-[40px]"}
-          src={asset(`Logo-${variant}.svg`)}
+          src={asset(`logo-${variant}.svg`)}
           alt=""
         />
       </Link>
