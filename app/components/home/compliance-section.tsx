@@ -1,9 +1,6 @@
 import { Container } from "@/app/components/ui/container";
 import { SectionHeading } from "@/app/components/ui/section-heading";
-import {
-  complianceCards,
-  type ComplianceItem,
-} from "@/app/data/home-content";
+import { complianceCards, type ComplianceItem } from "@/app/data/home-content";
 import { asset } from "@/app/lib/assets";
 
 function ComplianceCard({
@@ -39,12 +36,15 @@ export function ComplianceSection() {
       id="compliance"
       aria-labelledby="compliance-title"
     >
-      <div className="absolute bottom-0 right-0 opacity-[0.05]" aria-hidden="true">
+      <div
+        className="absolute bottom-0 right-0 opacity-[0.05]"
+        aria-hidden="true"
+      >
         <img src={asset("a.png")} alt="" />
       </div>
       <Container>
         <SectionHeading kicker="Uncompromising rigor" light>
-          <span id="compliance-title">Continuous Compliance, Assured.</span>
+          <span id="compliance-title">Continuous Compliance, Assured</span>
         </SectionHeading>
         <div className="relative grid grid-cols-3 gap-5 max-[820px]:grid-cols-1">
           {complianceCards.map((card) => (

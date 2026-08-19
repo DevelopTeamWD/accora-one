@@ -174,7 +174,7 @@ export const validationSteps = [
       "Use supporting documentation and test evidence for deployment.",
   },
   {
-    number: "03",
+    number: "04",
     title: "Controlled change",
     description:
       "Maintain confidence through release management and change impact review.",

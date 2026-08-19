@@ -18,8 +18,9 @@ export function ValidationLifecycleSection() {
           </p>
           <h2 className="mt-2 text-[40px] font-medium leading-[44px] max-[560px]:text-[32px] max-[560px]:leading-9">
             Validation support from
-            <br className="max-[560px]:hidden" /> implementation through ongoing
-            <br className="max-[560px]:hidden" /> change
+            <br className="max-[560px]:hidden" /> implementation through
+            <br className="max-[560px]:hidden" />
+            ongoing change
           </h2>
           <p className="mt-4 text-base leading-6 text-[#dedede]">
             Accura provides a validation-ready foundation with supporting

@@ -22,7 +22,7 @@ export function HeroSection() {
         </p>
         <h1 className="flex flex-col text-5xl leading-[1.42] tracking-[0.02em] max-[820px]:gap-1 max-[820px]:text-[clamp(38px,10vw,48px)] max-[820px]:leading-[1.16] max-[560px]:text-[38px]">
           <strong className="font-bold">Quality Management</strong>
-          <span className="font-normal text-brand-50">Made Simple.</span>
+          <span className="font-normal text-brand-50">Made Simple</span>
         </h1>
         <p className="mx-auto mb-[18px] mt-[13px] max-w-[603px] text-lg leading-7 max-[560px]:text-base max-[560px]:leading-6">
           Streamline documents, training, and CAPAs in a unified, modern

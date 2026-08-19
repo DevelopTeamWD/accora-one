@@ -110,9 +110,9 @@ export function SiteFooter() {
             <Link className="transition hover:text-white" href="/policy">
               Privacy Policy
             </Link>
-            <a className="transition hover:text-white" href="#">
-              Terms of Conditions
-            </a>
+            <Link className="transition hover:text-white" href="/terms">
+              Terms &amp; Conditions
+            </Link>
           </div>
         </div>
       </div>

@@ -9,7 +9,11 @@ type ComparisonCardProps = {
   positive?: boolean;
 };
 
-function ComparisonCard({ title, items, positive = false }: ComparisonCardProps) {
+function ComparisonCard({
+  title,
+  items,
+  positive = false,
+}: ComparisonCardProps) {
   return (
     <article
       className={`reveal min-h-[294px] rounded-3xl p-10 max-[560px]:min-h-0 max-[560px]:px-[22px] max-[560px]:py-7 ${positive ? "bg-brand-950 text-white" : "bg-[#f5f5f5]"}`}
@@ -48,11 +52,14 @@ export function WhyChangeSection() {
           <span id="why-title">
             Move from disconnected quality work
             <br className="max-[560px]:hidden" />
-            to one traceable operating system.
+            to one traceable operating system
           </span>
         </SectionHeading>
         <div className="grid grid-cols-2 gap-5 max-[820px]:grid-cols-1">
-          <ComparisonCard title="Traditional Reality" items={traditionalReality} />
+          <ComparisonCard
+            title="Traditional Reality"
+            items={traditionalReality}
+          />
           <ComparisonCard title="With Accura" items={accuraBenefits} positive />
         </div>
       </Container>

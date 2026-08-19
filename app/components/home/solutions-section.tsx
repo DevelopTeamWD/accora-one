@@ -35,7 +35,7 @@ function PillarColumn({ items }: { items: PillarItem[] }) {
 
 function ModuleCard({ icon, iconClass, title, description }: ModuleItem) {
   return (
-    <article className="reveal flex min-h-[248px] flex-col gap-5 rounded-[20px] border border-brand-150 bg-white px-7 py-[30px] transition duration-200 hover:-translate-y-1 hover:border-brand-700 hover:shadow-[0_16px_32px_rgba(0,57,63,0.09)] max-[560px]:min-h-[230px]">
+    <article className="reveal flex min-h-[230px] flex-col gap-5 rounded-[20px] border border-brand-150 bg-white px-7 py-[30px] transition duration-200 hover:-translate-y-1 hover:border-brand-700 hover:shadow-[0_16px_32px_rgba(0,57,63,0.09)] max-[560px]:min-h-[230px]">
       <div className="flex items-center gap-4">
         <IconBox>
           <img className={iconClass} src={asset(icon)} alt="" />
@@ -45,7 +45,7 @@ function ModuleCard({ icon, iconClass, title, description }: ModuleItem) {
         </h3>
       </div>
       <p className="flex-1 text-base leading-6 text-muted">{description}</p>
-      <a
+      {/* <a
         className="inline-flex items-center gap-1.5 self-start text-base font-medium"
         href="/contact"
       >
@@ -55,7 +55,7 @@ function ModuleCard({ icon, iconClass, title, description }: ModuleItem) {
           src={asset("module-arrow.svg")}
           alt=""
         />
-      </a>
+      </a> */}
     </article>
   );
 }
@@ -72,7 +72,7 @@ export function SolutionsSection() {
           <span id="pillars-title">
             One connected CAPA workflow.
             <br />
-            Every decision traceable.
+            Every decision traceable
           </span>
         </SectionHeading>
         <div className="mb-[122px] grid grid-cols-[276px_minmax(420px,1fr)_278px] items-center gap-8 max-[1100px]:grid-cols-[1fr_1.4fr_1fr] max-[1100px]:gap-[22px] max-[820px]:grid-cols-2 max-[560px]:mb-20 max-[560px]:grid-cols-1">

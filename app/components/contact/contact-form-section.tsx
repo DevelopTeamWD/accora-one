@@ -166,7 +166,7 @@ export function ContactFormSection() {
         <ContactVisual />
 
         <form
-          className="reveal flex min-h-[746px] flex-col gap-5 rounded-3xl bg-gradient-to-b from-brand-25 to-white px-8 py-6 max-[820px]:min-h-0 max-[560px]:px-5"
+          className="reveal flex min-h-[746px] flex-col gap-5 rounded-3xl bg-gradient-to-b from-brand-25 to-white px-7 py-6 max-[820px]:min-h-0 max-[560px]:px-5"
           name="contact"
           method="post"
           data-netlify="true"

@@ -13,7 +13,7 @@ export function ConfigurableWorkflowsSection() {
           <div className="reveal w-[590px] shrink-0 overflow-hidden rounded-3xl max-[1100px]:w-1/2 max-[820px]:w-full max-[820px]:max-w-[598px]">
             <img
               className="h-auto w-full"
-              src={asset("platform/workflow-diagram.png")}
+              src={asset("platform/process-1.png")}
               alt="Connected quality workflow from initial process through review, audit, risk, incident and change control"
             />
           </div>
