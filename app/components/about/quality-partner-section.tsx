@@ -27,7 +27,7 @@ export function QualityPartnerSection() {
               src={asset("about/partner-background.png")}
               alt="Laboratory glassware"
             />
-            <div className="relative flex w-[329px] flex-col items-center gap-7 max-[560px]:w-[280px]">
+            <div className="relative flex w-[340px] flex-col items-center gap-7 max-[560px]:w-[280px]">
               <img
                 className="h-[54.987px] w-[66.619px]"
                 src={asset("about/quote-mark.svg")}
