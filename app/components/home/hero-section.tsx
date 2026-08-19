@@ -30,7 +30,7 @@ export function HeroSection() {
         </p>
         <div className="flex items-center justify-center gap-5 max-[560px]:flex-col max-[560px]:gap-2.5">
           <span className="max-[560px]:w-[210px]">
-            <PrimaryButton href="#contact">Book a Consultation</PrimaryButton>
+            <PrimaryButton href="/contact">Book a Consultation</PrimaryButton>
           </span>
           <a
             className="inline-flex min-h-10 items-center justify-center gap-2 rounded-full border border-white px-[17px] py-[9px] text-sm font-medium transition hover:-translate-y-0.5 hover:bg-white/10 max-[560px]:w-[210px]"

@@ -29,7 +29,7 @@ export function SolutionsHeroSection() {
           evolves.
         </p>
         <div className="mt-4 flex items-center justify-center gap-5 max-[560px]:flex-col max-[560px]:gap-2.5">
-          <PrimaryButton href="#contact">Book a Consultation</PrimaryButton>
+          <PrimaryButton href="/contact">Book a Consultation</PrimaryButton>
           <a
             className="inline-flex min-h-10 items-center justify-center gap-2 rounded-full border border-white px-4 py-2 text-sm font-medium transition hover:-translate-y-0.5 hover:bg-white/10"
             href="#modules"

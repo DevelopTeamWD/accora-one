@@ -9,12 +9,10 @@ type BrandProps = {
 export function Brand({ footer = false, tone = "light" }: BrandProps) {
   const variant = footer || tone === "dark" ? "green" : "white";
 
-  console.log("Brand", variant, tone);
-
   if (footer) {
     return (
       <Link
-        className={`inline-flex items-center gap-[7px] ${footer ? "" : "relative z-10"}`}
+        className="inline-flex items-center gap-[4.384px]"
         href="/"
         aria-label="Accura One home"
       >
@@ -41,12 +39,12 @@ export function Brand({ footer = false, tone = "light" }: BrandProps) {
   } else {
     return (
       <Link
-        className={`inline-flex items-center gap-[7px] relative z-10`}
+        className="relative z-10 inline-flex items-center gap-[7px]"
         href="/"
         aria-label="Accura One home"
       >
         <img
-          className={"w-[132px] h-[40px]"}
+          className="h-10 w-[132.788px]"
           src={asset(`logo-${variant}.svg`)}
           alt=""
         />

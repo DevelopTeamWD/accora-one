@@ -26,7 +26,7 @@ const navigationItems: Array<{
 ];
 
 export function Navigation({
-  consultationHref = "#contact",
+  consultationHref = "/contact",
   menuId = "primary-nav-menu",
   theme = "dark",
 }: NavigationProps) {

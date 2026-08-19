@@ -47,7 +47,7 @@ function ModuleCard({ icon, iconClass, title, description }: ModuleItem) {
       <p className="flex-1 text-base leading-6 text-muted">{description}</p>
       <a
         className="inline-flex items-center gap-1.5 self-start text-base font-medium"
-        href="#contact"
+        href="/contact"
       >
         Learn More
         <img
