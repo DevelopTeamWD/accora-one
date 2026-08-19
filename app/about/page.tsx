@@ -18,7 +18,7 @@ export default function AboutPage() {
       <AboutHero />
       <main>
         <TeamPrinciplesSection />
-        <AdvisorsSection />
+        {/* <AdvisorsSection /> */}
         <PurposeSection />
         <CorePillarsSection />
         <QualityPartnerSection />
