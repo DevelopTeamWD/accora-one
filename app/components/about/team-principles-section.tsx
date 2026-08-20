@@ -6,26 +6,14 @@ const principleAssets = {
   expert: {
     background: "team-card-expert.png",
     icon: "team-icon-expert.svg",
-    iconWidth: 116,
-    iconHeight: 116,
-    iconTop: 18,
-    iconLeft: 18,
   },
   trust: {
     background: "team-card-trust.png",
     icon: "team-icon-trust.svg",
-    iconWidth: 106,
-    iconHeight: 121,
-    iconTop: 21,
-    iconLeft: 26,
   },
   context: {
     background: "team-card-context.png",
     icon: "team-icon-context.svg",
-    iconWidth: 129,
-    iconHeight: 129,
-    iconTop: 11,
-    iconLeft: 12,
   },
 } as const;
 
@@ -80,14 +68,8 @@ export function TeamPrinciplesSection() {
                 </h3>
                 <span className="relative block size-[150px] shrink-0" aria-hidden="true">
                   <img
-                    className="absolute max-w-none"
+                    className="absolute inset-0 size-full max-w-none"
                     src={asset(`about/${visual.icon}`)}
-                    style={{
-                      width: visual.iconWidth,
-                      height: visual.iconHeight,
-                      left: visual.iconLeft,
-                      top: visual.iconTop,
-                    }}
                     alt=""
                   />
                 </span>

@@ -46,15 +46,11 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="reveal absolute left-1/2 top-[511px] z-[3] h-[510px] w-[min(calc(100%_-_80px),925px)] -translate-x-1/2 overflow-hidden rounded-3xl border border-white/90 bg-[linear-gradient(140deg,rgba(255,255,255,0.38),rgba(170,170,170,0.2))] p-3 shadow-[0_30px_80px_rgba(0,25,29,0.35)] max-[820px]:top-[545px] max-[820px]:h-[360px] max-[820px]:w-[calc(100%_-_32px)] max-[820px]:rounded-[18px] max-[820px]:p-2 max-[560px]:top-[585px] max-[560px]:h-[260px]">
+      <div className="hero-product-composite">
         <img
-          className="h-auto w-full rounded-2xl"
-          src={asset("hero-product.png")}
-          alt="Accura document control interface"
-        />
-        <div
-          className="absolute inset-x-3 bottom-0 top-[42%] rounded-b-2xl bg-gradient-to-b from-transparent to-[rgba(245,245,245,0.98)] max-[820px]:inset-x-2"
-          aria-hidden="true"
+          className="reveal block size-full max-w-none"
+          src={asset("hero-product-composite.svg")}
+          alt="Accura document control interface with scrollbar guides"
         />
       </div>
     </header>

@@ -6,9 +6,7 @@ export type ModuleItem = {
 };
 
 export type ComplianceItem = {
-  visualClass: string;
-  image: string;
-  alt: string;
+  icon: "part11" | "alcoa" | "audit";
   title: string;
   description: string;
 };
@@ -126,25 +124,19 @@ export const modules: ModuleItem[] = [
 
 export const complianceCards: ComplianceItem[] = [
   {
-    visualClass: "bg-gradient-to-b from-[#f6fefb] from-[35%] to-[#c9e8de]",
-    image: "compliance-part11.png",
-    alt: "Part 11 electronic signature audit interface",
+    icon: "part11",
     title: "FDA 21 CFR Part 11 & EU Annex 11",
     description:
       "Native electronic signatures, password authentication, and comprehensive version control.",
   },
   {
-    visualClass: "bg-gradient-to-b from-[#fdfaf7] from-[35%] to-[#f9efe2]",
-    image: "compliance-alcoa.png",
-    alt: "Controlled document detail interface",
+    icon: "alcoa",
     title: "ALCOA & Principles",
     description:
       "Data integrity ensured: Attributable, Legible, Contemporaneous, Original, and Accurate.",
   },
   {
-    visualClass: "bg-gradient-to-b from-[#f6f8fd] from-[35%] to-[#e4eafa]",
-    image: "compliance-audit.png",
-    alt: "Automated audit trail interface",
+    icon: "audit",
     title: "Automated Audit Trails",
     description:
       "Every action is immutably logged with timestamp, user ID, and detailed event descriptions.",

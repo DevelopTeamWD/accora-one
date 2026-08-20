@@ -56,6 +56,37 @@
   transform: translateY(0);
 }
 
+.hero-product-composite {
+  position: absolute;
+  z-index: 3;
+  top: 217.85px;
+  left: 50%;
+  width: 1440px;
+  aspect-ratio: 1440 / 803.15;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+@media (max-width: 1100px) {
+  .hero-product-composite {
+    top: calc(536.3535px - 31.6919%);
+    width: calc(155.6757% - 124.5406px);
+  }
+}
+
+@media (max-width: 820px) {
+  .hero-product-composite {
+    top: calc(555.1414px - 31.6919%);
+    width: calc(155.6757% - 49.8162px);
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-product-composite {
+    top: calc(595.1414px - 31.6919%);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
